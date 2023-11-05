@@ -1,0 +1,19 @@
+form input{
+    display: block;
+    padding: .5em;
+    margin: .2em;
+}
+form{
+    margin: 0 auto;
+    display: inline-block;
+    width: 50%;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+  }

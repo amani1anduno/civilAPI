@@ -1,0 +1,24 @@
+{% extends 'users/base.html'%}
+{% block signup%}
+<div class="form">
+
+    <form action="http://localhost:8000/api/" method="post">
+        {% csrf_token %}
+        <input type="number" placeholder="NIN" name="nin">
+        <input type="text" placeholder="name" name="name">
+        <input type="text" placeholder="last name" name="last_name">
+        <input type="text" placeholder="father name" name="father_name">
+        <input type="text" placeholder="mother name" name="mother_name">
+        <input type="text" placeholder="mother last name" name="mother_last_name">
+        <input type="number" placeholder="phone number" name="phone_number">
+        <input type="submit" value="submit">
+    </form>
+    </div>
+    <div id="response">
+
+    {% block response%}
+            
+    {% endblock  %}
+    </div>
+
+{% endblock  %}
